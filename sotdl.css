@@ -1,6 +1,7 @@
 /** Import Fonts **/
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+English');
-@import url('https://fonts.googleapis.com/css?family=Uncial+Antiqua');
+	@import url('https://fonts.googleapis.com/css?family=IM+Fell+English');
+	@import url('https://fonts.googleapis.com/css?family=Uncial+Antiqua');
+	@import url('https://fonts.googleapis.com/css2?family=Merriweather');
 
 /** Defining Fonts **/
 @font-face {
@@ -26,56 +27,62 @@
 
 /** Background **/
 
-.phb { 
-	background-image: url('https://gmbinder.com/images/iD23LYE.jpg')
-	background-size: cover 
-}
+.phb {background-image: url('https://www.gmbinder.com/images/iD23LYE.jpg')}
 
-/** Text **/
+.phb {background-size: cover }
+
+
+/** Normal Text **/
 
 .phb {
-	font-family: Athelas;
+	font-family: 'Merriweather';
 }
 
 .phb p, .phb li, .phb ol{
-	font-family: 'GothamBook';
+	font-family: 'Merriweather';
 	font-size: 1em;
 	text-align: left;    
 }
 
-.phb h1+p::first-letter {
-	float: inherit;
-	font-family: inherit;
-	font-size: inherit;
-	color: inherit;
-	line-height: inherit;
+/** Lists **/
+
+.phb ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.phb ul li::marker {
+    font-family: "First Order"
+    content: '. ';
+    margin: 0 1em;    /* any design */
 }
 
 /** Headers **/
 
 .phb h1{
-  font-family: "First Order";
-  font-size: 400%;
-  text-align: center;
-  text-shadow: 0px 0px 5px black;
-  color: rgb(155,7,25);
-  text-transform: uppercase;
-  padding-top: 0.45em;
-  padding-bottom : 25px;
-  -webkit-font-smoothing: antialiased;
+	font-family: "First Order";
+	font-size: 400%;
+	text-align: center;
+	text-shadow: 0px 0px 5px black;
+	color: rgb(155,7,25);
+	text-transform: uppercase;
+	padding-top: 0.45em;
+	padding-bottom : 25px;
+	-webkit-font-smoothing: antialiased;
 }
 
 .phb h2,.phb  h3,.phb  h4,.phb  h5,.phb  h6,.phb h7 { 
-  font-family: "Portmanteau",'IM Fell English';
-  text-transform : uppercase;
-  text-align: left;
-  color: rgb(155,7,25);
-  font-weight: 500;
-  line-height: 1.1;
+	font-family: "Portmanteau",'IM Fell English';
+	text-transform : uppercase;
+	text-align: left;
+	color: rgb(155,7,25);
+	font-weight: 500;
+	line-height: 1.1;
 }
 
 .phb h3{
-  border-bottom-style: none;
+	border-bottom-style: solid;
+	border-color:#333;
 }
 
 .phb h4{
@@ -128,6 +135,16 @@
   font-weight: bold;
 }
 
+/** Decorations **/
+
+.phb h1+p::first-letter {
+	float: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	line-height: inherit;
+}
+
 /** Blockquote **/
 
 .phb blockquote{
@@ -166,6 +183,8 @@
     text-align:center;
 }
 
+/** Footer **/
+
 .phb .footnote{
 	color:#222;
     font-family: "First Order";
@@ -174,25 +193,35 @@
     bottom:0px;
 }
 
+/** Page Numbers **/
+
 .phb .pageNumber {
-    bottom:0px;
+    font-family: "First Order";
+    font-size: 2em;
+    color:rgb(155,7,25);
+    bottom:22px;
     vertical-align: middle;
+    right: 383px;
 }
 
-.phb .pageNumber.auto{
-	bottom:22px;
+.phb .pageNumber::before {
+    	content: ". ";
 }
 
-.phb .pageNumber.auto::after{
-	height:22px;
+.phb .pageNumber::after {
+    	content: " .";
 }
 
-.phb .pageNumber p, .phb .pageNumber.auto p{
-	font-family: "First Order";
-    font-size: 2.5em;
-    color: #222;
-    text-align: center;
-}
+.phb::after {
+	content: '';
+	background: none;
+    background-image: none;
+    background-size: 100px 100px; 
+    background-repeat: no-repeat;   
+
+
+
+
 
 .html-code code{
 	visibility: visible;
