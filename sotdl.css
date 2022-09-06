@@ -1,0 +1,469 @@
+/** Import Fonts **/
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Merriweather&family=Uncial+Antiqua&display=swap');
+
+@import url('http://fonts.cdnfonts.com/css/poison-hope');
+
+/** Defining Fonts **/
+
+@font-face {
+	font-family: 'First Order';
+	src: url('https://iamarogue.github.io/homebrewery/fonts/firstv2.ttf')
+}
+
+
+/** Background **/
+
+.page {
+	background-size: cover; 
+	background-image: url('https://iamarogue.github.io/homebrewery/images/old-paper-background.jpg');
+}
+
+
+/** Normal Text **/
+
+.page p {
+	font-family: 'Merriweather';
+	font-size: 1em;
+	text-align: left;    
+}
+
+/** Headers **/
+
+.page h1{
+	font-family: "First Order";
+	font-size: 400%;
+	text-align: left;
+  color: black;
+	text-transform: uppercase;
+	padding-top: 0.45em;
+	padding-bottom : 15px;
+}
+
+.page h2, .page h3, .page h4, .page h5, .page h6 { 
+	text-align: left;
+	line-height: 1.1;
+}
+
+.page h2{
+	font-family: 'IM Fell English', serif;
+	text-transform : uppercase;
+	font-size: 250%;
+	color: rgb(155,7,25);
+}
+
+.page h3{
+	font-family: 'IM Fell English', serif;
+	text-transform : uppercase;
+	font-size: 200%;
+	color:#000;
+	border-style:none;
+}
+
+.page h4{
+    font-family: 'IM Fell English', serif;
+    text-transform : uppercase;
+    font-size: 150%;
+    color: rgb(155,7,25);
+}
+
+.page h5{
+    font-family: 'Merriweather';
+    font-weight: 800;
+	font-size: 125%;
+	color:#000;
+	text-transform: capitalize;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 1px;
+}
+
+.page h6{
+	font-family: 'Merriweather';
+	font-weight: 800;
+	font-size: 100%;
+	color: #000;
+	text-decoration: underline;
+	text-transform: capitalize;
+    border-bottom-style: none;
+}
+
+/** Lists **/
+
+ul, li, ol{
+	font-family: 'Merriweather';
+	font-size: 1em;
+	text-align: left;    
+}
+
+.page ul li::marker {
+	font-family: "First Order";
+	font-size: 150%;
+	color: rgb(155,7,25);
+	content: ". ";
+}
+
+.page ol li::marker {
+	font-family: "IM Fell English";
+	font-size: 125%;
+	color: rgb(155,7,25)
+}
+
+
+/** Tables **/
+
+.page table {
+	margin: 5px 0px 5px 0px;
+}
+
+.page table thead th {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Merriweather";
+  font-size:.85em;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.page table tbody tr{
+  font-family: "Merriweather";
+  font-size:.85em;
+}
+
+.page table tbody tr:nth-child(odd){
+    background-color: initial;
+    font-family: "Merriweather";
+  font-size:.85em;
+}
+
+.page table tbody tr:nth-child(even) {
+  background-color: #fff;
+  font-family: "Merriweather";
+  font-size:.85em;
+}
+
+.page strong em, .page em strong{
+  color: rgb(155,7,25);
+  font-style : normal;
+  font-weight: bold;
+}
+
+/** Introduction **/
+
+.page h1+p::first-line {
+	font-variant: none;
+}
+.page h1+p::first-letter {
+	width: 100%;
+	background-image: none;
+	float: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	line-height: inherit;
+}
+
+.page h1+p {
+	font-family: "First Order";
+	font-size: 300%;
+	font-weight: 600;
+	text-align: right;
+  color: black;
+	text-transform: uppercase;
+	padding-top: 0px;
+	margin-top: -20px;
+	column-span:all;
+	-webkit-column-span:all;
+	-moz-column-span:all;
+	display:block;
+	margin-bottom:.34cm
+}
+
+.page h1+p+hr, .page h1+hr {
+  display:block;
+	column-span:all;
+  border:none;
+  height:5px;
+	margin-bottom: 10px;
+  background-image: url('https://iamarogue.github.io/homebrewery/images/line.png');
+	mix-blend-mode: multiply;
+} 
+
+.page h2+p::first-letter {
+	float: left;
+	font-family: "First Order";
+	line-height: 1em;
+	font-size: 5em;
+	padding-left: 40px;
+	margin-left: -40px;
+	margin-top: -0.3cm;
+	padding-bottom: 2px;
+	margin-bottom: -20px;
+	color: rgb(155,7,25);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+
+
+/** Blockquote **/
+
+.page blockquote {
+	background-color: transparent;
+	border: solid 2px #757575;
+	display: inline-block;
+	width: 100%;
+	margin: 5px 0px 5px 0px;
+	padding: 1em;
+	position: relative;
+}
+
+.page blockquote h3{
+	border: none;
+	text-align: center;
+	padding-bottom: 10px;
+	font-size: 120%;
+}
+
+.page blockquote h4{
+    font-size: 100%;
+}
+
+.page blockquote h5{
+	border: none;
+}
+
+.page blockquote p, .page blockquote li{
+	font-size:0.9em;
+}
+
+
+
+/** Descriptive **/
+
+.page .descriptive{
+	
+	background-color: #f8f8f8;
+	box-shadow: none;
+	font-style: italic;
+	width: 100%;
+	padding: 1em;
+	margin: 5px 0px 5px 0px;
+}
+
+.page .descriptive h5{
+	font-style:normal;
+	color:black;
+	text-align:center;
+}
+
+
+/** Note **/
+
+.page .note{
+	
+	background-color: #f8f8f8;
+	width: 100%;
+	padding: 1em;
+	margin: 5px 0px 5px 0px;
+	
+}
+
+.page .note h5{
+	text-align:center;
+}
+
+/** Footer **/
+
+.page .footnote{
+	color:#333;
+	font-family: "IM Fell English";
+	font-size: 1.2em;
+	width:100%;
+	bottom:23px;
+}
+
+.page .author{
+	position: absolute;
+	left: 80px;
+	z-index: 150;
+	text-align: left;
+	color:#333;
+	font-family: "IM Fell English";
+	font-size: 1.2em;
+	width:100%;
+	bottom:23px;
+}
+
+/** Page Numbers **/
+
+.page .pageNumber {
+	font-family: "First Order";
+	font-size: 2em;
+	color:rgb(155,7,25);
+	bottom:22px;
+	vertical-align: middle;
+	right: 383px;
+}
+
+.page .pageNumber::before {
+	content: ". ";
+}
+
+.page .pageNumber::after {
+	content: " .";
+}
+
+.page::after {
+	content: '';
+	background: none;
+	background-image: none;
+}
+
+.page::after {
+	background: none;
+    background-size: 100px 100px; 
+    background-repeat: no-repeat;   
+    background-position: 0px calc(100% - 0px);
+    height: 100px
+}
+
+
+.page:nth-child(odd):after {
+    transform: scaleX(-1);
+}
+
+.page:nth-child(even):after {
+    transform: scaleX(1);
+}
+
+/** Monster Stat Block **/
+
+.statblock {
+	font-family: "Merriweather";
+	padding : 0px;
+	background-color: #f8f8f8;
+}
+
+.statblock p {
+	font-family : "Merriweather";
+	
+}
+
+.statblock h2+p::first-letter {
+	font-family: inherit;
+	line-height: inherit;
+	font-size: inherit;
+	padding: inherit;
+	margin: inherit;
+	color: inherit;
+}
+
+/* Monster name */
+.page .statblock h1 { 
+	font-family : "Merriweather";
+	background-color: black;
+	background-image : none;
+	color : white;
+	font-weight: bold;
+	font-size: 1em;
+	padding: 5px;
+	float:left;
+	margin: 0px;
+	width:60%;
+	text-align: left;
+}
+
+/* Monster difficulty */
+.page .statblock h2::before{
+	content: "Difficulty ";
+}
+	
+.page .statblock h2 { 
+	font-family : "Merriweather";
+	background-color: black;
+	line-height: 1.1;
+	color : white;
+	font-weight: bold;
+	font-size: 0.9em;
+	padding: 5px;
+	float:right;
+	width: 40%;
+	margin : 0px;
+	text-align:right;
+}
+
+/* Size and type, first line after header */
+.page .statblock h2+p { 
+    clear : both;
+    background-color : darkred;
+		font-size: 0.8em;
+    color: white;
+    padding : 3px;
+    padding-left: 5px;
+}
+
+.page .statblock h2+p+hr, .statblock h3+hr {
+	display:none;
+}
+
+.page .statblock ul {
+	padding-left: 5px;
+	padding-right: 3px;
+}
+
+/* Most text*/
+.page .statblock hr+ul li { 
+	font-size: 0.9em;
+	margin-left: 10px;
+	text-indent: -10px;
+	list-style-type:none;
+	padding-bottom: 1px;
+}
+
+.page .statblock ul li::marker { 
+	content: '';
+}
+
+/* For attack options, magic, etc. */
+.page .statblock h3 { 
+	font-family : "Merriweather";
+  background-color: #BBB;
+  color: black;
+  padding: 3px;
+  padding-left: 5px;
+  font-size: 0.9em;
+  font-weight: bold;
+  border-style : none;
+}
+
+
+.page .statblock hr {
+	background-image : none;
+    visibility: visible;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0px 0px 0px;
+    position: relative;
+}
+
+
+/** Misc **/
+
+.page hr {
+  visibility: visible;
+	display:block;
+  border:none;
+  height:3px;
+	position: relative;
+	background-size: 100%;
+  background-image: url('https://iamarogue.github.io/homebrewery/images/line.png');
+	mix-blend-mode: multiply;
+	margin: 5px 0px 5px 0px;
+}
+
+
+.page hr+blockquote{
+	border-style : none;
+    background-image: none;
+    background-color : transparent;
+}
