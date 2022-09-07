@@ -216,7 +216,7 @@ ul, li, ol{
 	display: inline-block;
 	width: 100%;
 	margin: 5px 0px 5px 0px;
-	padding: 1em;
+	padding: 0.5em;
 	position: relative;
 }
 
@@ -249,7 +249,7 @@ ul, li, ol{
 	box-shadow: none;
 	font-style: italic;
 	width: 100%;
-	padding: 1em;
+	padding: 0.5em;
 	margin: 5px 0px 5px 0px;
 }
 
@@ -266,7 +266,7 @@ ul, li, ol{
 	
 	background-color: #f8f8f8;
 	width: 100%;
-	padding: 1em;
+	padding: 0.5em;
 	margin: 5px 0px 5px 0px;
 	
 }
@@ -285,7 +285,7 @@ ul, li, ol{
 	bottom:23px;
 }
 
-.page .author{
+.page .author, .page .author p{
 	position: absolute;
 	left: 80px;
 	z-index: 150;
