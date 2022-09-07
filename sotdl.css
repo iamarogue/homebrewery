@@ -49,6 +49,7 @@
 	text-transform : uppercase;
 	font-size: 250%;
 	color: rgb(155,7,25);
+	padding-top: 5px;
 }
 
 .page h3{
@@ -57,24 +58,26 @@
 	font-size: 200%;
 	color:#000;
 	border-style:none;
+	padding-top: 3px;
 }
 
 .page h4{
-    font-family: 'IM Fell English', serif;
-    text-transform : uppercase;
-    font-size: 150%;
-    color: rgb(155,7,25);
+	font-family: 'IM Fell English', serif;
+	text-transform : uppercase;
+	font-size: 150%;
+	color: rgb(155,7,25);
+	padding-top: 2px;
 }
 
 .page h5{
-    font-family: 'Merriweather';
-    font-weight: 800;
+	font-family: 'Merriweather';
+	font-weight: 800;
 	font-size: 125%;
 	color:#000;
 	text-transform: capitalize;
-    border-bottom-style: solid;
-    border-bottom-color: black;
-    border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+	border-bottom-width: 1px;
 }
 
 .page h6{
@@ -130,8 +133,8 @@ ul, li, ol{
 }
 
 .page table tbody tr:nth-child(odd){
-    background-color: initial;
-    font-family: "Merriweather";
+	background-color: initial;
+	font-family: "Merriweather";
   font-size:.85em;
 }
 
@@ -199,8 +202,8 @@ ul, li, ol{
 	padding-bottom: 2px;
 	margin-bottom: -20px;
 	color: rgb(155,7,25);
-    background-clip: text;
-    -webkit-background-clip: text;
+	background-clip: text;
+	-webkit-background-clip: text;
 }
 
 
@@ -394,12 +397,12 @@ ul, li, ol{
 
 /* Size and type, first line after header */
 .page .statblock h2+p { 
-    clear : both;
-    background-color : darkred;
-		font-size: 0.8em;
-    color: white;
-    padding : 3px;
-    padding-left: 5px;
+	clear : both;
+	background-color : darkred;
+	font-size: 0.8em;
+	color: white;
+	padding : 3px;
+	padding-left: 5px;
 }
 
 .page .statblock h2+p+hr, .statblock h3+hr {
@@ -439,11 +442,12 @@ ul, li, ol{
 
 .page .statblock hr {
 	background-image : none;
-    visibility: visible;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px 0px 0px 0px;
-    position: relative;
+	visibility: visible;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px 0px 0px 0px;
+	position: relative;
+	margin: 0px;
 }
 
 
@@ -464,6 +468,6 @@ ul, li, ol{
 
 .page hr+blockquote{
 	border-style : none;
-    background-image: none;
-    background-color : transparent;
+	background-image: none;
+	background-color : transparent;
 }
