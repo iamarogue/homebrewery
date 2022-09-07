@@ -165,12 +165,12 @@ ul, li, ol{
 	line-height: inherit;
 }
 
-.page h1+p {
+.page h1+h2 {
 	font-family: "First Order";
 	font-size: 300%;
 	font-weight: 600;
 	text-align: right;
-  color: black;
+	color: black;
 	text-transform: uppercase;
 	padding-top: 0px;
 	margin-top: -20px;
@@ -181,15 +181,24 @@ ul, li, ol{
 	margin-bottom:.34cm
 }
 
-.page h1+p+hr, .page h1+hr {
-  display:block;
+.page h1+h2+hr, .page h1+hr, .page h1+p+hr, .page h1+h2+p+hr {
+	display:block;
 	column-span:all;
-  border:none;
-  height:5px;
+	border:none;
+	height:5px;
 	margin-bottom: 10px;
-  background-image: url('https://iamarogue.github.io/homebrewery/images/line.png');
+	background-image: url('https://iamarogue.github.io/homebrewery/images/line.png');
 	mix-blend-mode: multiply;
 } 
+
+.page h1+p, .page h1+h2+p {
+	column-span:all;
+	font-style: italic;
+	-webkit-column-span:all;
+	-moz-column-span:all;
+	display:block;
+	margin-bottom:.34cm
+}
 
 .page h2+p::first-letter {
 	float: left;
