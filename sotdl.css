@@ -361,6 +361,25 @@ ul, li, ol{
 	
 }
 
+.statblock h1+h2+hr, .statblock h1+hr, .statblock h1+p+hr, .statblock h1+h2+p+hr {
+	display: inherit;
+	column-span: inherit;
+	border: inherit;
+	height: inherit;
+	margin-bottom: inherit;
+	background-image: none;
+} 
+
+.statblock h1+p, .statblock h1+h2+p {
+	column-span: inherit;
+	font-style: inherit;
+	-webkit-column-span: inherit;
+	-moz-column-span: inherit;
+	display: inherit;
+	margin-bottom: inherit;
+}
+
+
 .statblock h2+p::first-letter {
 	font-family: inherit;
 	line-height: inherit;
