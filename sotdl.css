@@ -318,11 +318,11 @@ ul, li, ol{
 }
 
 .page .pageNumber::before {
-	content: ". ";
+	content: '. ';
 }
 
 .page .pageNumber::after {
-	content: " .";
+	content: ' .';
 }
 
 .page::after {
@@ -333,15 +333,19 @@ ul, li, ol{
 
 .page::after {
 	background: none;
-    background-size: 100px 100px; 
-    background-repeat: no-repeat;   
-    background-position: 0px calc(100% - 0px);
-    height: 100px
+	background-size: 100px 100px; 
+	background-repeat: no-repeat;   
+	background-position: 0px calc(100% - 0px);
+	height: 100px
+}
+
+.page:nth-child(even) .pageNumber {
+	left: inherit;
 }
 
 
 .page:nth-child(odd):after {
-    transform: scaleX(-1);
+	transform: scaleX(-1);
 }
 
 .page:nth-child(even):after {
