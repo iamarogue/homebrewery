@@ -313,8 +313,9 @@ ul, li, ol{
 	font-size: 2em;
 	color:rgb(155,7,25);
 	bottom:22px;
+	width: 100px;
 	vertical-align: middle;
-	right: 383px;
+	right: 358px;
 }
 
 .page .pageNumber::before {
