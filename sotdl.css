@@ -323,7 +323,7 @@ ul, li, ol{
 }
 
 .page .pageNumber::after {
-	content: ' .';
+	content: counter(phb-page-numbers) ' .';
 }
 
 .page::after {
@@ -350,7 +350,7 @@ ul, li, ol{
 }
 
 .page:nth-child(even):after {
-    transform: scaleX(1);
+	transform: scaleX(1);
 }
 
 /** Monster Stat Block **/
@@ -380,7 +380,7 @@ ul, li, ol{
 	font-style: inherit;
 	-webkit-column-span: inherit;
 	-moz-column-span: inherit;
-	display: inherit;
+	display: block !important;
 	margin-bottom: inherit;
 }
 
@@ -463,13 +463,13 @@ ul, li, ol{
 /* For attack options, magic, etc. */
 .page .statblock h3 { 
 	font-family : "Merriweather";
-  background-color: #BBB;
-  color: black;
-  padding: 3px;
-  padding-left: 5px;
-  font-size: 0.9em;
-  font-weight: bold;
-  border-style : none;
+	background-color: #BBB;
+	color: black;
+	padding: 3px;
+	padding-left: 5px;
+	font-size: 0.9em;
+	font-weight: bold;
+	border-style : none;
 }
 
 
