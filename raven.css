@@ -1,12 +1,9 @@
 /** Import Fonts **/
 @import url('https://fonts.cdnfonts.com/css/playbill');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.cdnfonts.com/css/sf-espionage-heavy-2');
+@import url('https://fonts.cdnfonts.com/css/oldnewspapertypes');
 
-/** Defining Fonts **/
-
-@font-face {
-	font-family: 'First Order';
-	src: url('https://iamarogue.github.io/homebrewery/fonts/firstv2.ttf')
-}
 
 /** Background **/
 
@@ -19,7 +16,7 @@
 /** Normal Text **/
 
 .page p {
-	font-family: 'Merriweather';
+	font-family: 'Special Elite', cursive;
 	font-size: 3em;
 	text-align: left;    
 }
@@ -27,7 +24,7 @@
 /** Headers **/
 
 .page h1{
-	font-family: "Playbill";
+	font-family: 'Playbill', sans-serif;
 	font-size: 400%;
 	letter-spacing: 1em;
 	text-align: center;
@@ -35,6 +32,15 @@
 	padding-top: 0.45em;
 	padding-bottom : 15px;
 }
+
+.page h2{
+	font-family: 'SF Espionage Heavy', sans-serif;
+}
+
+.page h3{
+	font-family: 'OldNewspaperTypes', sans-serif;
+}
+	
 
 /** Footer **/
 
