@@ -1,14 +1,6 @@
 /** Import Fonts **/
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Merriweather&family=Uncial+Antiqua&display=swap');
-
-@import url('http://fonts.cdnfonts.com/css/poison-hope');
-
-/** Defining Fonts **/
-
-@font-face {
-	font-family: 'First Order';
-	src: url('https://iamarogue.github.io/homebrewery/fonts/firstv2.ttf')
-}
+@import url('https://fonts.cdnfonts.com/css/sunday-funday');
+@import url('https://fonts.cdnfonts.com/css/lp-food');
 
 
 /** Background **/
@@ -30,7 +22,7 @@
 /** Headers **/
 
 .page h1{
-	font-family: "First Order";
+	font-family: 'sunday funday', sans-serif;
 	font-size: 400%;
 	text-align: left;
   color: black;
@@ -45,7 +37,7 @@
 }
 
 .page h2{
-	font-family: 'IM Fell English', serif;
+	font-family: 'sunday funday', sans-serif;
 	text-transform : uppercase;
 	font-size: 250%;
 	color: rgb(155,7,25);
@@ -53,7 +45,7 @@
 }
 
 .page h3{
-	font-family: 'IM Fell English', serif;
+	font-family: 'sunday funday', sans-serif;
 	text-transform : uppercase;
 	font-size: 200%;
 	color:#000;
@@ -62,7 +54,7 @@
 }
 
 .page h4{
-	font-family: 'IM Fell English', serif;
+	font-family: 'sunday funday', sans-serif;
 	text-transform : uppercase;
 	font-size: 150%;
 	color: rgb(155,7,25);
@@ -248,7 +240,11 @@ ul, li, ol{
 	font-size:0.9em;
 }
 
+/** Food **/
 
+.page .food {
+	font-family: 'lpfood', sans-serif;
+}
 
 /** Descriptive **/
 
