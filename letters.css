@@ -12,12 +12,6 @@
 
 /** Normal Text **/
 
-.page p {
-	font-family: 'Merriweather';
-	font-size: 1em;
-	text-align: left;    
-}
-
 .page .script1 {
   font-family: 'Allison', cursive !important;
   font-size: 40px !important;
