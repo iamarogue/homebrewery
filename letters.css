@@ -1,0 +1,161 @@
+/** Import Fonts **/
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Caveat&family=Dancing+Script:wght@600&family=Inspiration&family=Just+Me+Again+Down+Here&family=Kings&family=Lugrasimo&family=Mrs+Saint+Delafield&family=My+Soul&family=Mynerve&family=Over+the+Rainbow&family=Permanent+Marker&family=Princess+Sofia&family=Splash&family=WindSong&family=Zeyada&display=swap');
+
+
+/** Background **/
+
+.page {
+	background-size: cover; 
+	background-image: url('https://iamarogue.github.io/homebrewery/images/old-paper-background.jpg');
+}
+
+
+/** Normal Text **/
+
+.page p {
+	font-family: 'Merriweather';
+	font-size: 1em;
+	text-align: left;    
+}
+
+.page .script1 {
+  font-family: 'Allison', cursive !important;
+  font-size: 40px !important;
+}
+
+
+.page .script2 {
+  font-family: 'Caveat', cursive !important;
+  font-size: 40px !important;
+}
+
+.page .script3 {
+  font-family: 'Dancing Script', cursive !important;
+  font-size: 40px !important;
+}
+
+.page .script4 {
+  font-family: 'Inspiration', cursive;
+  font-size: 40px !important;
+}
+
+.page .script5 {
+  font-family: 'Just Me Again Down Here', cursive;
+  font-size: 40px !important;
+}
+
+.page .script6 {
+  font-family: 'Kings', cursive;
+  font-size: 40px !important;
+}
+
+.page .script7 {
+  font-family: 'Princess Sofia', cursive;
+  font-size: 40px !important;
+}
+
+.page .script8 {
+  font-family: 'Mrs Saint Delafield', cursive;
+  font-size: 40px !important;
+}
+
+.page .script9 {
+  font-family: 'My Soul', cursive;
+  font-size: 40px !important;
+}
+
+.page .script10 {
+  font-family: 'Mynerve', cursive;
+  font-size: 40px !important;
+}
+
+.page .script11 {
+  font-family: 'Over the Rainbow', cursive;
+  font-size: 40px !important;
+}
+
+.page .script12 {
+  font-family: 'Splash', cursive;
+  font-size: 40px !important;
+}
+
+.page .script13 {
+  font-family: 'WindSong', cursive;
+  font-size: 40px !important;
+}
+
+.page .script14 {
+  font-family: 'Zeyada', cursive;
+  font-size: 40px !important;
+}
+
+
+
+/** Footer **/
+
+.page .footnote{
+	color:#333;
+	font-family: "IM Fell English";
+	font-size: 1.2em;
+	width:100%;
+	bottom:23px;
+}
+
+.page .author, .page .author p{
+	position: absolute;
+	left: 80px;
+	z-index: 150;
+	text-align: left;
+	color:#333;
+	font-family: "IM Fell English";
+	font-size: 1.2em;
+	width:100%;
+	bottom:23px;
+}
+
+/** Page Numbers **/
+
+.page .pageNumber {
+	font-family: "First Order";
+	font-size: 2em;
+	color:rgb(155,7,25);
+	bottom:22px;
+	width: 100px;
+	vertical-align: middle;
+	right: 358px;
+}
+
+.page .pageNumber::before {
+	content: '. ';
+}
+
+.page .pageNumber::after {
+	content: counter(phb-page-numbers) ' .';
+}
+
+.page::after {
+	content: '';
+	background: none;
+	background-image: none;
+}
+
+.page::after {
+	background: none;
+	background-size: 100px 100px; 
+	background-repeat: no-repeat;   
+	background-position: 0px calc(100% - 0px);
+	height: 100px
+}
+
+.page:nth-child(even) .pageNumber {
+	left: inherit;
+}
+
+
+.page:nth-child(odd):after {
+	transform: scaleX(-1);
+}
+
+.page:nth-child(even):after {
+	transform: scaleX(1);
+}
